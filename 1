@@ -1,0 +1,104 @@
+let arr = [
+  {name: "Alex", age : 28 , weight : 76 , work_experience : 4 , vaccine_dose: 2,},
+  {name: "John", age : 31 , weight : 83 , work_experience : 6 , vaccine_dose: 2,},
+  {name: "Anton", age : 27 , weight : 81 , work_experience : 5 , vaccine_dose: 2,},
+]
+
+//   console.log(arr);
+
+
+// let resultOne = arr.find(function (item, index, array) {
+//   return item.age === 28;
+// });
+// console.log (result);
+
+
+// let full = {
+//     name: "Alex", 
+//     age : 28 ,
+//     weight : 76 ,
+//     work_experience : 4 ,
+//   [Symbol.isConcatSpreadable]: true,
+//   length: 10
+//   };
+  
+//   let SecondFull = {
+//     name: "John", 
+//     age : 31 ,
+//     weight : 83 ,
+//     work_experience : 6 ,
+//   [Symbol.isConcatSpreadable]: true,
+//   length: 10
+//   };
+
+// let ThirdFull = {
+  //   name: "John", 
+  //   age : 29 ,
+  //   weight : 79 ,
+  //   work_experience : 5 ,
+  // [Symbol.isConcatSpreadable]: true,
+  // length: 10
+  // };
+
+
+  
+//   // for (let key in full) {
+    
+//   //   alert( key );  
+    
+//   //   alert( user[key] ); 
+//   // }
+  
+  
+  let time = prompt ('В какое время вы пришли?', "12:00");
+  if (time >= 12) {
+    alert ("На данный момент свободны Alex и John");
+  } else if (time < 12) {
+    alert( 'На данный момент свободный Anton' );
+  }  
+  let choice = prompt ('Alex or John or Anton');
+  
+   if (choice == "Alex") {
+    let result = confirm ("Хотите узнать информацию о тренере?");
+    let resultOne = arr.find(function (item, index, array) {
+      return item.age == 28;
+    });
+    if (result == true) {
+     console.log (resultOne);
+  }
+   } 
+  
+
+  if (choice == "John") {
+    let result = confirm ("Хотите узнать информацию о тренере");
+    let resultOne = arr.find(function (item, index, array) {
+      return item.age == 31;
+    });
+    if (result == true) {
+     console.log (resultOne);
+  }
+   }
+
+   if (choice == "Anton") {
+    let result = confirm ("Хотите узнать информацию о тренере");
+    let resultOne = arr.find(function (item, index, array) {
+      return item.age == 27;
+    });
+    if (result == true) {
+     console.log (resultOne);
+  }
+   }
+   let workout = prompt ("Выбор тренировки: силовая или кардио");
+   if (workout == "силовая") {
+     let typeOfTraining = prompt ("Выберите тренировку:full body, руки, ноги, пресс");
+     let timeTwo = prompt ("Сколько времени вы готовы потратить на тренировку?");
+     if (timeTwo > 30) {
+      let num = Math.floor(Math.random() * 100) + 100;
+      alert(num, "калорий вы потратите");
+      };
+     };
+
+  //  };
+  //  if (workout = "кардио")
+   
+  
