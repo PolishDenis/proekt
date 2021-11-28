@@ -4,6 +4,12 @@ let arr = [
   {name: "Anton", age : 27 , weight : 81 , work_experience : 5 , vaccine_dose: 2,},
 ]
 
+let arrSecond = [
+  {name: "Протеиновый коктейль", calories: 100 , cooking_time_min : 5 ,},
+  {name: "Яичный коктейль с медом", calories: 110 , cooking_time_min  : 6 ,},
+  {name: "Белковый коктейль с творогом", calories: 120 , cooking_time_min  : 7 ,},
+]
+
 //   console.log(arr);
 
 
@@ -94,9 +100,27 @@ let arr = [
      let timeTwo = prompt ("Сколько времени вы готовы потратить на тренировку?");
      if (timeTwo > 30) {
       let num = Math.floor(Math.random() * 100) + 100;
-      alert(num, "калорий вы потратите");
+      alert(num +  "  калорий вы потратите");
       };
+     }
+     else if (workout == "кардио") {
+      let typeOfTrainingSecond = prompt ("Выберите тренировку:бег, ходьба, плавание,");
+      let timeTwo = prompt ("Сколько времени вы готовы потратить на тренировку?");
+      if (timeTwo > 30) {
+       let num = Math.floor(Math.random() * 100) + 100;
+       alert(num +  "  калорий вы потратите");
+       };
+     }
+
+     let coctail = confirm ("Хотите выпить энергичный коктейль после тренировки?")
+     if (coctail == true) {
+        console.log (arrSecond);
+     } else  {
+      (coctail == false)
+       let bb = "Спасибо что пришли, приходите еще" 
+      alert (bb)
      };
+
 
   //  };
   //  if (workout = "кардио")
